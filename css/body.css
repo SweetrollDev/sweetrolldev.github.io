@@ -1,0 +1,45 @@
+/*
+primary color: #2fa186
+secondary color: #4bb2b1
+
+
+*/
+
+:root {
+    --basicBorder: 5px solid white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #4bb2b1;
+    color: white;
+    text-align: center;
+}
+
+/* https://www.w3docs.com/snippets/css/how-to-select-all-child-elements-recursively-in-css.html */
+#primaryContent > * {
+    margin: 10px;
+    border: var(--basicBorder);
+    vertical-align: middle;
+    background-color: #2fa186;
+}
+
+header {
+    height: 400px;
+}
+
+main {
+    
+    border: var(--basicBorder);
+    height: 1500px;
+}
+
+footer {
+    min-width: 100%;
+    height: 150px;
+}
