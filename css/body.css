@@ -23,20 +23,34 @@ body {
 
 /* https://www.w3docs.com/snippets/css/how-to-select-all-child-elements-recursively-in-css.html */
 #primaryContent > * {
-    margin: 10px;
-    border: var(--basicBorder);
     vertical-align: middle;
     background-color: #2fa186;
 }
 
 header {
     height: 400px;
+    background-image: url("../img/png/duckSnake.png");
+    background-size: cover;
+}
+
+header h1 {
+    padding: 100px;
+    text-align: center;
 }
 
 main {
-    
+    min-height: 1000px;
+}
+
+main section {
+    float: left;
+    margin: 10px;
     border: var(--basicBorder);
-    height: 1500px;
+}
+
+main img {
+    width: 300px;
+    height: 300px;
 }
 
 footer {
