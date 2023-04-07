@@ -7,7 +7,16 @@ nav {
     overflow: hidden;
 	position: fixed;
 	top: 0%;
-    background-color: black;
+    background-color: var(--secondaryColor);
+    border-bottom: 1px solid white;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+#homeLink {
+    font-family: pixel;
 }
 
 /* Leftmost icon */
@@ -43,7 +52,7 @@ nav ul {
 
 nav li a {
     text-decoration: none;
-    color: white;
+    color: var(--lightTextColor);
     padding: 10px;
     display: block;
 }

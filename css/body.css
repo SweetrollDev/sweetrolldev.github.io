@@ -1,12 +1,11 @@
-/*
-primary color: #2fa186
-secondary color: #4bb2b1
-
-
-*/
-
 :root {
-    --basicBorder: 5px solid white;
+    --primaryColor: #0d4030;
+    --secondaryColor: #125944;
+    --lightTextColor: white;
+    --darkTextColor: black;
+    --linkColor: #F7E708;
+    --hoverColor: #ddd;
+    --basicBorder: 1px solid white;
 }
 
 * {
@@ -16,20 +15,27 @@ secondary color: #4bb2b1
 }
 
 body {
-    background-color: #4bb2b1;
-    color: white;
+    background-color: var(--secondaryColor);
+    color: var(--lightTextColor);
+    font-size: 18px;
     text-align: center;
+}
+
+@font-face {
+    font-family: pixel;
+    src: url(../fonts/Press_Start_2P/PressStart2P-Regular.ttf);
 }
 
 /* https://www.w3docs.com/snippets/css/how-to-select-all-child-elements-recursively-in-css.html */
 #primaryContent > * {
     vertical-align: middle;
-    background-color: #2fa186;
+    background-color: var(--primaryColor);
 }
 
 header {
     height: 400px;
-    background-image: url("../img/png/duckSnake.png");
+    background-image: url("../img/aurora.jpg");
+    /* https://pixabay.com/images/id-1197753/ */
     background-size: cover;
 }
 
@@ -40,12 +46,19 @@ header h1 {
 
 main {
     min-height: 1000px;
+    border-top: var(--basicBorder);
+    border-bottom: var(--basicBorder);
+}
+
+a {
+    color: var(--linkColor);
 }
 
 main section {
+    width: 100%;
+    padding: 20px;
+    border-bottom: var(--basicBorder);
     float: left;
-    margin: 10px;
-    border: var(--basicBorder);
 }
 
 main img {
