@@ -1,11 +1,14 @@
 :root {
-    --primaryColor: #0d4030;
-    --secondaryColor: #125944;
+    --primaryColor: black;
+    --secondaryColor: white;
     --lightTextColor: white;
     --darkTextColor: black;
-    --linkColor: #F7E708;
     --hoverColor: #ddd;
     --basicBorder: 1px solid white;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 * {
@@ -15,28 +18,24 @@
 }
 
 body {
-    background-color: var(--secondaryColor);
+    background-color: grey;
     color: var(--lightTextColor);
     font-size: 18px;
     text-align: center;
 }
 
-@font-face {
-    font-family: pixel;
-    src: url(../fonts/Press_Start_2P/PressStart2P-Regular.ttf);
-}
-
 /* https://www.w3docs.com/snippets/css/how-to-select-all-child-elements-recursively-in-css.html */
 #primaryContent > * {
     vertical-align: middle;
-    background-color: var(--primaryColor);
 }
 
 header {
     height: 400px;
-    background-image: url("../img/aurora.jpg");
     /* https://pixabay.com/images/id-1197753/ */
+    /*
+    background-image: url("../img/aurora.jpg");
     background-size: cover;
+    */
 }
 
 header h1 {
@@ -46,24 +45,8 @@ header h1 {
 
 main {
     min-height: 1000px;
-    border-top: var(--basicBorder);
-    border-bottom: var(--basicBorder);
-}
-
-a {
-    color: var(--linkColor);
-}
-
-main section {
-    width: 100%;
-    padding: 20px;
-    border-bottom: var(--basicBorder);
-    float: left;
-}
-
-main img {
-    width: 300px;
-    height: 300px;
+    background-color: var(--primaryColor);
+    box-shadow: 0px 0px 20px lightBlue;
 }
 
 footer {

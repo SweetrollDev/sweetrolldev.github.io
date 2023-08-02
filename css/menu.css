@@ -5,61 +5,23 @@ nav {
     width: 100%;
     min-height: 50px;
     overflow: hidden;
-	position: sticky;
-	top: 0;
-    background-color: var(--secondaryColor);
-    border-bottom: 1px solid white;
+    /* try changing position to sticky */
+    border: 1px solid white;
 }
 
-nav a {
-    text-decoration: none;
-}
-
-#homeLink {
-    font-family: pixel;
-}
-
-/* Leftmost icon */
-nav a.icon {
-    width: 50px;
-    height: 50px;
-    background-color: black;
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-nav a.icon > * {
-    width: 100%;
-    height: 100%;
-}
-
-nav a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-/* Company icon (home page link) */
-
-/* Dropdown menu */
 nav ul {
-    display: none;
     list-style-type: none;
-    text-decoration: none;
-    margin-top: 35px;
 }
 
 nav li a {
     text-decoration: none;
-    color: var(--lightTextColor);
-    padding: 10px;
+    color: var(--darkTextColor);
+    padding: 40px;
+    float: left;
     display: block;
 }
 
-
-aside {
-	background-color: white;
-	position: fixed;
-	bottom: 0%;
+nav a:hover {
+    background-color: var(--hoverColor);
+    color: var(--darkTextColor);
 }
