@@ -1,0 +1,36 @@
+.project-grid {
+    display: grid;
+    gap: 30px 30px;
+    justify-content: center;
+}
+
+figure {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 70% 30%;
+    width: 300px;
+    height: 200px;
+    border: var(--basic-border);
+}
+
+figure img {
+    width: 100%;
+    height: 100%;
+    grid-column: span 2;
+}
+
+figure > figcaption, a {
+    background-color: var(--primary-color);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .project-grid {
+        grid-template-columns: repeat(2, 300px);
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .project-grid {
+        grid-template-columns: repeat(3, 300px);
+    }
+}

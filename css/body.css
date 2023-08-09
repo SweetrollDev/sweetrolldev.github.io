@@ -1,14 +1,14 @@
 :root {
-    --primaryColor: black;
-    --secondaryColor: white;
-    --lightTextColor: white;
-    --darkTextColor: black;
-    --hoverColor: #ddd;
-    --basicBorder: 1px solid white;
+    --primary-color: #006959;
+    --secondary-color: white;
+    --text-color: white;
+    --hover-color: #004d41;
+    --basic-border: 1px solid white;
 }
 
 html {
     scroll-behavior: smooth;
+    font-size: 1em;
 }
 
 * {
@@ -19,37 +19,39 @@ html {
 
 body {
     background-color: grey;
-    color: var(--lightTextColor);
-    font-size: 18px;
+    color: var(--text-color);
+    font-size: 17px;
     text-align: center;
 }
 
-/* https://www.w3docs.com/snippets/css/how-to-select-all-child-elements-recursively-in-css.html */
-#primaryContent > * {
-    vertical-align: middle;
-}
-
-header {
-    height: 400px;
-    /* https://pixabay.com/images/id-1197753/ */
-    /*
-    background-image: url("../img/aurora.jpg");
-    background-size: cover;
-    */
-}
-
-header h1 {
-    padding: 100px;
-    text-align: center;
+h1 {
+    font-size: 2rem
 }
 
 main {
-    min-height: 1000px;
-    background-color: var(--primaryColor);
-    box-shadow: 0px 0px 20px lightBlue;
+    position: absolute;
+    top: 20%;
+    width: 100%;
 }
 
-footer {
-    min-width: 100%;
-    height: 150px;
+main div {
+    margin: 10px;
+}
+
+main h1 {
+    padding: 50px;
+}
+
+main img {
+    width: 300px;
+    height: 300px;
+}
+
+@media (min-width: 1024px) {
+    body {
+        font-size: 20px;
+    }
+    h1 {
+      font-size: 4rem;
+    }
 }

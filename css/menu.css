@@ -1,27 +1,19 @@
-/*
-https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
-*/
+/* Make <nav> disapear after user has scrolled a specified distance in JS */
 nav {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
     width: 100%;
-    min-height: 50px;
-    overflow: hidden;
-    /* try changing position to sticky */
-    border: 1px solid white;
+    top: 0%;
+    z-index: 1;
+    background-color: var(--primary-color);
 }
 
-nav ul {
-    list-style-type: none;
-}
-
-nav li a {
-    text-decoration: none;
-    color: var(--darkTextColor);
-    padding: 40px;
-    float: left;
-    display: block;
+nav a {
+    padding: 20px;
+    color: var(--text-color);
 }
 
 nav a:hover {
-    background-color: var(--hoverColor);
-    color: var(--darkTextColor);
+    background-color: var(--hover-color);
 }
